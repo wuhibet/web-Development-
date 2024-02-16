@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script src ='script.js'></script>
+        <script>
+            console.log('starting....')
+            const balert = function(x){
+                alert(x);
+                window.location.replace('/Users/user/Downloads/giphy.gif')
+            }   
+            const bouncer = function(){
+                let result = confirm("This page is for people who want to make a donation. Do you want to make a donation? ");
+                if (result == true){
+                    
+                }else{
+                    window.location.replace('https://www.youtube.com/watch?v=5mEHKdhK9cY')
+                }
+            }
+                bouncer();
+        </script>
+
+        <style>
+            .btn{
+                padding: 10px;
+                background-color: black;
+                color: #ffffffd3;
+
+            }
+            </style>
+
+    </head>
+    <body>
+        
+        <hr>
+        
+        <div class='text-6xl text-center'>
+            Welcome to the donation page !
+        </div>
+        <h2>How much do you want to donate?</h2>
+        <p> Hebrews 13:16 'And do not forget to do good and to share with others, for with such sacrifices God is pleased.' </p>
+            
+            <div class="items-center">
+                <button class= "btn" onclick="balert('Thank you for your 10$ donation!')"> 10$</button>
+                <button class= "btn" onclick="balert('Thank you for your 25$ donation!')"> 25$ </button>
+                <button class= "btn" onclick="balert('Thank you for your 50$ donation!')">  50$ </button>
+                <button class= "btn" onclick="balert('Thank you for your 100$ donation!')">  100$ </button>
+                <button class= "btn" onclick="balert('Thank you for your 1000$ donation!')">  1,000$ </button>
+            
+            </div>
+    </body>
+</html>
