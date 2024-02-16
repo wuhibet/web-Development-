@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script src ='script.js'></script>
+        <script>
+            console.log('starting....')
+            const balert = function(x){
+                alert(x);
+            }
+        
+            const addsTen = function (x){
+                let total = (x+10);
+                document.getElementById('result').innerHTML=total;
+            }
+            const changeColor = function(x){
+                let result = document.getElementById("result");
+                result.classList.remove('text-red-500');
+                result.classList.remove('text-blue-500');
+                result.classList.add(x);
+            }
+            const enterName=function(){
+                let name =prompt('Please enter your name');
+                let firstNameSpan = document.getElementById("firstName");
+                firstNameSpan.innerHTML = name;
+            }
+            const bouncer = function(){
+                let result = confirm("Are you ready?");
+                if (result == true){
+                    alert('Yes');
+                }else{
+                    window.location.replace('https://www.youtube.com')
+                }
+            }
+                bouncer();
+        </script>
+
+        <style>
+            .btn{
+                padding: 10px;
+                background-color: blue;
+                color: #fff;
+            }
+            </style>
+
+    </head>
+    <body>
+        <div>
+        <button class= "btn" onclick="balert('Hi!')">
+            Say Hi!
+        </button>
+        <button class= "btn" onclick="balert('Goodbye!')"> Say Goodbye</button>
+        </div>
+        <hr>
+        <button class= "btn" onclick= "addsTen(100)"> Add 10 </button>
+        <button class= "btn" onclick= "changeColor('text-blue-500')"> change to Blue </button>
+        <button class= "btn" onclick= "changeColor('text-red-500')"> change to Red </button>
+        <div id="result" class="text-5xl text-red-500"></div>
+
+        <HR>
+            <button class="btn" onclick="enterName()">Enter name</button>
+        <div class='text-6xl'>
+            Welcome to my page <span id="firstName"> </span>!
+        </div>
+    </body>
+</html>
