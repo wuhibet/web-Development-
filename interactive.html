@@ -6,12 +6,8 @@
             console.log('starting....')
             const balert = function(x){
                 alert(x);
-            }
-            const enterName=function(){
-                let name =prompt('Please enter your name');
-                let firstNameSpan = document.getElementById("firstName");
-                firstNameSpan.innerHTML = name;
-            }
+                window.location.replace('https://www.youtube.com/watch?v=My2fjhO_9Nc')
+            }   
             const bouncer = function(){
                 let result = confirm("This page is for people who want to make a donation. Do you want to make a donation? ");
                 if (result == true){
@@ -27,7 +23,7 @@
             .btn{
                 padding: 10px;
                 background-color: black;
-                color: #fff;
+                color: #ffffffd3;
 
             }
             </style>
@@ -41,16 +37,15 @@
             Welcome to the donation page !
         </div>
         <h2>How much do you want to donate?</h2>
-            <button class="btn" onclick="enterName()"> </button>
-            <button class= "btn" onclick= "addsTen(100)"> Add 10 </button>
-            <button class= "btn" onclick= "changeColor('text-blue-500')"> change to Blue </button>
-            <button class= "btn" onclick= "changeColor('text-red-500')"> change to Red </button>
-            <div id="result" class="text-5xl text-red-500"></div>
-            <div>
-                <button class= "btn" onclick="balert('Hi!')">
-                    Say Hi!
-                </button>
-                <button class= "btn" onclick="balert('Goodbye!')"> Say Goodbye</button>
-                </div>
+        <p> Hebrews 13:16 'And do not forget to do good and to share with others, for with such sacrifices God is pleased.' </p>
+            
+            <div class="items-center">
+                <button class= "btn" onclick="balert('Thank you for your 10$ donation!')"> 10$</button>
+                <button class= "btn" onclick="balert('Thank you for your 25$ donation!')"> 25$ </button>
+                <button class= "btn" onclick="balert('Thank you for your 50$ donation!')">  50$ </button>
+                <button class= "btn" onclick="balert('Thank you for your 100$ donation!')">  100$ </button>
+                <button class= "btn" onclick="balert('Thank you for your 1000$ donation!')">  1,000$ </button>
+            
+            </div>
     </body>
 </html>
